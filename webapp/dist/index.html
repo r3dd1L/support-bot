@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Bot Admin</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0f23 0%, #1a0a2e 50%, #160b23 100%);
+      min-height: 100vh;
+      color: white;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #ff0055 0%, #9900ff 100%);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(255, 0, 85, 0.2);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ff0055 0%, #9900ff 100%);
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 20px rgba(255, 0, 85, 0.4);
+    }
+
+    .btn-danger {
+      background: linear-gradient(135deg, #ff3333 0%, #ff0000 100%);
+    }
+
+    .input-field {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .input-field:focus {
+      border-color: #ff0055;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255, 0, 85, 0.2);
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, rgba(255, 0, 85, 0.1) 0%, rgba(153, 0, 255, 0.1) 100%);
+    }
+
+    .maintenance-banner {
+      background: linear-gradient(135deg, #ff3333 0%, #ff0000 100%);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.9; }
+    }
+
+    .tab-active {
+      background: linear-gradient(135deg, #ff0055 0%, #9900ff 100%);
+    }
+
+    .tab {
+      transition: all 0.3s ease;
+    }
+
+    .tab:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .icon {
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-Cx28brMp.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
